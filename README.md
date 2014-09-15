@@ -20,6 +20,7 @@ pip install -r requirements.txt
 * Each document is stamped with a time and the UUID of the user who generated it as well as a score.
 * If we decide to do web sockets, the flask app emits an update each time a score is processed.
 * If we decide to poll, a long-running python daemon will write a new JSON file every 15 seconds to S3.
+* We'll store documents in [Elasticsearch](http://www.elasticsearch.org/guide/en/elasticsearch/client/python-api/current/).
 
 ### Client-side
 * We'll use Pym.js to responsively embed an iframed HTML document stored on S3 into our Wordpress-based CMS.
