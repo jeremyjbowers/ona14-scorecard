@@ -1,0 +1,14 @@
+Fabric==1.10.0
+Flask==0.10.1
+Jinja2==2.7.3
+MarkupSafe==0.23
+Werkzeug==0.9.6
+ecdsa==0.11
+elasticsearch==1.2.0
+-e git+git@github.com:jeremyjbowers/gspread.git@687fbfa1e92ff0a1e896b26da3039ec987a83016#egg=gspread-master
+itsdangerous==0.24
+paramiko==1.14.1
+pycrypto==2.6.1
+requests==2.4.1
+urllib3==1.9.1
+wsgiref==0.1.2
