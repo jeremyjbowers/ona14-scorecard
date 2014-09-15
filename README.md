@@ -5,14 +5,23 @@ This app allows panel attendees to score their panel in real-time. Other feature
 * Global activity view shows scores as they are received
 
 ## Getting Started
-0a. Assume your mac is [set up like this](http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html)
-0b. Export environment variables that Jeremy sent to you. You can do this by editing your `~/.bash_profile` and then running `source ~/.bash_profile` after you have saved it.
+* Assume your mac is [set up like this](http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html)
+* Export environment variables that Jeremy sent to you. You can do this by editing your `~/.bash_profile` and then running `source ~/.bash_profile` after you have saved it.
 
 ```
 git clone git@github.com:jeremyjbowers/ona14-scorecard.git && cd ona14-scorecards
 pip install -r requirements.txt
 ./app.py
 ```
+
+### Running Elasticsearch on a Mac
+Download and install [Java JDK7.67](http://download.oracle.com/otn-pub/java/jdk/7u67-b01/jdk-7u67-macosx-x64.dmg).
+```
+brew update
+brew install elasticsearch
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.elasticsearch.plist
+```
+Now, you should be able to [check the health of your local cluster](http://localhost:9200/_cat/health?v).
 
 ## Architecture
 ### Server-side
