@@ -2,7 +2,7 @@ Fabric==1.10.0
 Flask==0.10.1
 Jinja2==2.7.3
 MarkupSafe==0.23
-Werkzeug==0.9.6
+Werkzeug==0.15.3
 ecdsa==0.11
 elasticsearch==1.2.0
 -e git+git@github.com:jeremyjbowers/gspread.git@687fbfa1e92ff0a1e896b26da3039ec987a83016#egg=gspread-master
