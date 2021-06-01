@@ -10,5 +10,5 @@ itsdangerous==0.24
 paramiko==1.14.1
 pycrypto==2.6.1
 requests==2.4.1
-urllib3==1.9.1
+urllib3==1.26.5
 wsgiref==0.1.2
